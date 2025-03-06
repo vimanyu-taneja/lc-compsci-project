@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <!-- AOS (Animate on scroll) library CSS -->
+    <link href="aos/dist/aos.css" rel="stylesheet">
+    
+    <!-- Slick (for carousel) -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    
+    <!-- Google Fonts -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/report-style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.png">
+    
+    <title>Report | SMARTair</title>
+  </head>
+  
+  <body>
+    <div class="heroSection py-3">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img src="media/logo.png" class="img-fluid logo" alt="The SMARTair logo: a baby blue background with three white waves">
+            <span>SMARTair</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#investigation-and-plan">Investigation and Plan <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#design">Design <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#implementation-and-testing">Implementation and Testing <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#evaluation">Evaluation <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#references">References <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="#word-count">Word Count <div class="line"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+      <!-- Video -->
+      <section class="mainBanner py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 p-3 text-center" data-aos="fade-up">
+              <div class="bg-transparent rounded overflow-hidden border-0 w-75 mx-auto">
+                <video width="850" height="480" controls poster="media/report-media/poster.png" preload="auto">
+                  <source src="media/report-media/operation-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video -->
+      
+    </div>
+    
+    <!-- Investigation and plan -->
+    <section class="smartHome py-5 bg-dark" id="investigation-and-plan">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fs-38 text-white fw-bold mb-4">Investigation and Plan</h3>
+        </div>
+        <h5 class="fw-bold text-white subheading"> Context of brief </h5>
+        <p class="text-white"> Initially, I read the brief thoroughly. I found the video by Eye on Tech a useful introduction to the concept of home automation. This resource taught me about possible applications of this technology, namely to control lighting, energy, thermostats, and security. I then did a case study of various smart homes. For example, I researched the home of the founder of Runtastic. He has lights that “switch on automatically when needed” and blinds that “regulate themselves.” He also has the option to control his home manually using “touch switches.” I also looked into the Orchard Lodge developed by Marshall & McCourt, which has a "holistic smart home system" including aspects such as "lighting, shading, audio, access and security." I learned that there are 258.54 million smart homes worldwide as of 2021 and ABB Ltd. is the market leader in the industry, with Wyze being another key player. </p>
+        <img src="media/report-media/smarthome-testimonial.png" class="img-fluid w-50 mb-5 mt-3 offset-md-3" alt="">
+        <h5 class="fw-bold text-white subheading"> Existing solutions </h5>
+        <p class="text-white"> I found existing home automation solutions by looking at Wyze’s products, which are aligned with the brief as they can be controlled and/or monitored from the Wyze website. </p>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="row">
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-night-light.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-sprinkler-controller.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-cam-v3.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-sense-keypad.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-sense-entry-sensor.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-bulb-white.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-lock.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-floor-lamp.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+              <div class="col-md-4 p-4">
+                <img src="media/report-media/wyze-video-doorbell-pro.png" class="img-fluid d-block mx-auto" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="fw-bold text-white subheading"> Brainstorming </h5>
+        <p class="text-white"> I decided to narrow my focus to lighting, fans, and security cameras as they are realistic to make and solve genuine problems in life. </p>
+        <img src="media/report-media/lighting-mindmap.png" class="img-fluid w-100 mb-5" alt="">
+        <img src="media/report-media/fans-mindmap.png" class="img-fluid w-100 mb-5" alt="">
+        <img src="media/report-media/security-cameras-mindmap.png" class="img-fluid w-100 mb-5" alt="">
+        <h5 class="fw-bold text-white subheading"> Chosen solution </h5>
+        <p class="text-white"> I chose to build a fan smart home device because it is straight-forward, satisfies the brief, and solves a genuine problem, such as maintaining a room at a certain temperature for a pet. The lighting solutions don’t solve such important problems, and the security camera will take too long to implement. </p>
+        <p class="text-white list-intro">Initially, I had the following vision for the project: </p>
+        <ul class="text-white m-0 p-2">
+          <li> A fan that can be controlled both from a website and using physical controls (a button and potentiometer). </li>
+          <li> The user can monitor the temperature and humidity of the fan’s environment from the website. </li>
+          <li> On the website, the user can set a specific threshold temperature. If the temperature is above this auto-on temperature, then the fan is switched on. </li>
+          <li> A sign-in page on the website allows the user to enter credentials, and the user is redirected to the control panel for their device(s). </li>
+          <li> The website can be used to control the fan from anywhere in the world. </li>
+        </ul>
+        <p class="text-white"> I researched my options for the micro-controller. I tested several Arduino microcontrollers, including a NodeMCU board as described in a video by techiesms that I watched. I couldn’t get them to connect to Firebase reliably, so I researched other technical solutions. </p>
+        <img src="media/report-media/microcontrollers.png" class="img-fluid w-50 mb-5 mt-3 offset-md-3" alt="">
+        <p class="text-white"> Instead, I decided to use a Micro:bit with a Boson kit, as I found a case study of a similar project by ElecFreaks. This meant that I would only be able to easily monitor temperature, not humidity. Also, speed control of the fan would be complicated, so due to the time constraints, I decided to solely allow on/off control of the fan. Similarly, I dropped all physical controls of the fan too. </p>
+        <p class="text-white list-intro">Following are my refined objectives for the artefact:</p>
+        <ul class="text-white m-0 p-2">
+          <li> A fan that can be turned on and off from a website </li>
+          <li> On the website, the user can set a specific threshold temperature. If the temperature is above this auto-on temperature, then the fan is switched on. </li>
+          <li> The user can monitor the current temperature of the fan’s environment from the website </li>
+          <li> The sign-in functionality allows the user to enter credentials, which are then verified, and the user is redirected to the control hub </li>
+          <li> The website can be used to control the fan from anywhere in the world </li>
+        </ul>
+        <p class="text-white list-intro">The initial system requirements are as follows: </p>
+        <ul class="text-white m-0 p-2">
+          <li> Micro:bit with Boson starter kit </li>
+          <li> One or two computers, both with an Internet connection </li>
+          <li> Appropriate USB cables to connect the Micro:bit to the computer </li>
+          <li> The computer connected to the Micro:bit must have full read, write, and execute permissions on the serial port connected to the microcontroller. </li>
+          <li> A second USB cable is connected to the Micro:bit as an external power source. </li>
+          <li> Google account for Firebase </li>
+          <li> IDE with Python and web development functionalities </li>
+        </ul>
+        <h5 class="fw-bold text-white subheading"> User research </h5>
+        <p class="text-white list-intro">The target demographic of my artefact is: </p>
+        <ul class="text-white m-0 p-2">
+          <li> Interested in technology </li>
+          <li> Homeowner </li>
+          <li> Already has some smart home devices </li>
+          <li> Lives in a warm climate </li>
+          <li> Has pets, or young children </li>
+        </ul>
+        <p class="text-white">I created two user personas to illustrate this. </p>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="row">
+              <div class="col-md-6 p-4 text-center">
+                <p class="text-white"> Technology Tom </p>
+                <img src="media/report-media/tom-persona.png" class="img-fluid w-50 mb-3" alt="">
+                <p class="text-white"> Tom is a Software Engineer at Google. He loves technology and his house is filled with smart speakers, lights, curtains, and more. </p>
+              </div>
+              <div class="col-md-6 p-4 text-center">
+                <p class="text-white"> Busy Barbara </p>
+                <img src="media/report-media/barbara-persona.png" class="img-fluid w-50 mb-3" alt="">
+                <p class="text-white"> Barbara is a real estate agent at a big firm. She is constantly out of the house selling properties. The SMARTfan gives her a sense of comfort that her two dogs are safe at home. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-white list-intro">The artefact will be inclusive and accessible for all users by the following techniques: </p>
+        <ul class="text-white m-0 p-2">
+          <li> All media will have alt attributes for those who use screen readers. </li>
+          <li> Avoid unnecessarily large animations and files to support those with poor internet connections. This can be achieved using a modular approach to the code of the webpage. </li>
+          <li> Avoid colours like red, green, brown, and yellow which can be problematic for people with colour-blindness. </li>
+          <li> Make the website responsive on a variety of resolutions for those who do not have access to a laptop. </li>
+          <li> Have significant contrast between text and background for those with vision impairments. </li>
+        </ul>
+        <p class="text-white"> With regards to ethical and social implications, our main issue is with storing our users’ data. According to Article 5 of GDPR, the website must use techniques such as encryption and pseudonymisation to protect sensitive data such as emails and names. Although, I cannot implement this given the timeframe, so this security and privacy instability is an important ethical and social concern. </p>
+        <p class="text-white"> I created a simple stakeholder graphic for the company. </p>
+        <div class="row mb-4">
+          <div class="col-md-10 offset-md-1">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <img src="media/report-media/stakeholder-graphic.jpg" class="img-fluid w-75" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="fw-bold text-white subheading"> Branding </h5>
+        <div class="row">
+          <div class="col-md-6 p-5 m-auto">
+            <img src="media/report-media/baw-name.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-md-5 p-4 m-auto text-center">
+            <img src="media/report-media/baw-icon.png" class="img-fluid w-50" alt="">
+          </div>
+          <div class="col-md-5 p-4 m-auto">
+            <img src="media/report-media/colours.png" class="img-fluid w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Investigation and plan -->
+    
+    <!-- Design -->
+    <section class="ourProducts py-5 w-85" id="design">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fw-bold fs-38 mb-4">Design</h3>
+        </div>
+        <h5 class="fw-bold text-dark mb-4 subheading"> Sitemap </h5>
+        <div class="row mb-5">
+          <div class="col-md-8 offset-md-2 text-center">
+            <img src="media/report-media/sitemap.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <h5 class="fw-bold text-dark mb-4 subheading"> Wireframes </h5>
+        <div class="slider mb-5 mt-5">
+          <div class="slide">
+            <img src="media/report-media/home-wireframe.png" class="d-block" alt="...">
+          </div>
+          <div class="slide">
+            <img src="media/report-media/products-wireframe.png" class="d-block" alt="...">
+          </div>
+          <div class="slide">
+            <img src="media/report-media/contact-wireframe.png" class="d-block" alt="...">
+          </div>
+          <div class="slide">
+            <img src="media/report-media/smartfan-wireframe.png" class="d-block" alt="...">
+          </div>
+          <div class="slide">
+            <img src="media/report-media/sign-in-wireframe.png" class="d-block" alt="...">
+          </div>
+          <div class="slide">
+            <img src="media/report-media/control-wireframe.png" class="d-block" alt="...">
+          </div>
+        </div>
+        <h5 class="fw-bold text-dark mb-4 subheading"> System architecture </h5>
+        <div class="row mb-5">
+          <div class="col-md-8 offset-md-2 text-center">
+            <img src="media/report-media/system-architecture.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <p> The user’s web browser runs a JavaScript code to get the temperature (temp) of the fan’s environment from a Firebase Realtime Database. This script also posts a Boolean describing whether the fan should be on (fanOn) and the threshold temperature for the fan to automatically turn on (autoOnTemp) that the user has input on the website. </p>
+        <p> A computer is connected to a Micro:bit via USB. The computer is running a Python code to get the fan status (fanOn) from the database. It writes this Boolean to the serial. The Micro:bit has a separate Python code to read this value and turns the fan on/off accordingly. This Python code on the Micro:bit also writes the current temperature (temp) to the serial, which is then read by the computer and posted to Firebase. </p>
+        <p> Event listeners are used to post the statuses of the toggle switch and the auto-on temperature input to Firebase if they are changed. The following algorithm runs continuously in device.js to decide whether the fan should be on or off. </p>
+        <img src="media/report-media/website-flowchart.png" class="w-50 mx-auto d-block my-4" alt="">
+        <p> Communication between the Micro:bit and the computer is achieved using the following pseudocode on each device. The computer and microcontroller use opposite delimiters ($ and b’) to differentiate between what they wrote and what they should be reading. </p>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="row">
+              <div class="col-md-6 p-4 text-center">
+                <p> Computer </p>
+                <img src="media/report-media/computer-psuedocode.png" class="img-fluid w-100 mb-3" alt="">
+              </div>
+              <div class="col-md-6 p-4 text-center">
+                <p> Micro:bit </p>
+                <img src="media/report-media/microbit-pseudocode.png" class="img-fluid w-100 mb-3" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p> I initially prototyped my Micro:bit code on Microsoft MakeCode. </p>
+        <div class="text-center mb-4">
+          <img src="media/report-media/prototype-blocks.png" class="w-50 d-block m-auto" alt="">
+        </div>
+        <p>The mailing list, sign-in, and contact form take input from the user and push it to Firebase. The function validateEmail is used throughout the code and attempts to match a given email to standard RegEx. It returns true if the email is valid, and false if it is invalid.</p>
+        <p>There are four parent branches to the database configuration: </p>
+        <ol>
+          <li> contact: stores data from the contact form </li>
+          <li> mailing-list: stores emails from the mailing list </li>
+          <li> devices: stores data for each device </li>
+          <li> users: stores the devices and sign-in credentials of each user </li>
+        </ol>
+        <p> The following JSON structure explains this. Here, fields such as “uniqueID”, “userID”, and “serialNumber” are primary keys in the database; the strings are just placeholders. </p>
+        <img src="media/report-media/database-json.png" class="w-50 d-block m-auto" alt="">
+      </div>
+    </section>
+    <!-- Design -->
+    
+    <!-- Implementation and testing -->
+    <section class="investing py-5 bg-dark text-white" id="implementation-and-testing">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h3 class="text-white fw-bold"> Implementation and testing </h3>
+        </div>
+        <h5 class="fw-bold text-white mb-4 subheading"> Tools </h5>
+        <p class="text-white"> I used Bootstrap and jQuery to speed up the website development. Slick was used for the carousels and the AOS library for animations. The Bootstrap toggle library was used for the toggle switch on the control hub. I developed the entire website on Replit as it allowed me to access my work on different computers. </p>
+        <h5 class="fw-bold text-white mb-4 subheading"> Timeline </h5>
+        <img src="media/report-media/gantt-chart.png" class="img-fluid d-block m-auto bg-white" alt="">
+        <p class="mt-3 text-white list-intro">Some key milestones illustrated above include:</p>
+        <ul>
+          <li>
+            <p class=" mb-0 text-white">Decided on project on 15th December 2021</p>
+          </li>
+          <li>
+            <p class="mb-0 text-white">Began implementation on 24th January 2022 </p>
+          </li>
+          <li>
+            <p class="mb-0 text-white">Finished artefact on 14th February 2022</p>
+          </li>
+          <li>
+            <p class="mb-0 text-white">Recorded video on 28th February 2022</p>
+          </li>
+          <li>
+            <p class="mb-0 text-white">Finished report content on 4th March 2022</p>
+          </li>
+          <li>
+            <p class="mb-0 text-white">Finished report website on 11th March 2022 </p>
+          </li>
+        </ul>
+        <h5 class="fw-bold text-white mb-4 subheading"> Development issues </h5>
+        <p class="text-white"> The project went largely to plan. The schedule described above was mostly maintained. Although, some aspects were more difficult than expected: the database and serial communication. </p>
+        <p class="text-white"> Using Firebase proved quite cumbersome as there have been some drastic changes in its system in recent years. So, I had virtually no use of online tutorials. For example, different versions of Firebase use different configuration parameters. </p>
+        <img src="media/report-media/firebase-web-error.png" class="img-fluid d-block m-auto w-50" alt="">
+        <p class="text-white mt-4"> I had error messages relating to missing dependencies when using the firebase and python-firebase libraries in Python. Looking at the python-firebase documentation, I saw that it hadn’t been updated since 2014. </p>
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <img src="media/report-media/firebase-python-error.png" class="img-fluid d-block m-auto" alt="">
+          </div>
+          <div class="col-md-6 p-4">
+            <img src="media/report-media/python-firebase.png" class="img-fluid d-block m-auto" alt="">
+          </div>
+        </div>
+        <p class="text-white mt-4"> I decided to search for more recent Python libraries for interfacing with Firebase. I found Pyrebase and used it instead. So, I had to use a different Python library than I had initially planned on using. This time spent debugging added one day to the time allocated for implementation, so I had less time for testing and evaluation. </p>
+        <p class="text-white "> I also had problems with serial communication. Initially, reading from the serial worked but I could not write to the serial. I researched this issue online and found that it was because I did not have sufficient permissions on the port used. I explained this in a comment at the top of the corresponding Python file. </p>
+        <img src="media/report-media/permissions-error.png" class="img-fluid d-block w-75 m-auto" alt="">
+        <p class="text-white mt-4"> Now, I could write to the serial, but the Micro:bit was unable to read from the serial. By checking the serial monitor, I found that the issue was that the lines that I wrote to the serial were not encoded properly. This changed the pseudocode I had previously planned out for this purpose. </p>
+        <p class="text-white "> So instead of concatenating the delimiter “b’” with the fan state, I used the built-in .encode() function in Python. This altered the string accordingly for the serial. </p>
+        <h5 class="fw-bold text-white mb-4 subheading"> Code </h5>
+        <p class="text-white "> I used a modular approach for the JavaScript files of the website. There are separate JavaScript files for device communication (device.js), initialising libraries (init.js), mailing list (mailing-list.js), sign-in functionality (sign-in.js) and contact form (contact.js), which are only referenced when required. </p>
+        <p class="text-white">The most common high-level data structure in my code is a JavaScript object. </p>
+        <img src="media/report-media/post-to-firebase.png" class="img-fluid d-block m-auto w-50" alt="">
+        <p class="text-white mt-4"> The above function is an example of a programming construct that shows how I use functions throughout the project to prevent unnecessary duplication of code. Multiple times during the script, I use that function to update all the data in the Firebase database. </p>
+        <img src="media/report-media/using-functions.png" class="img-fluid d-block m-auto w-50" alt="">
+        <p class="text-white mt-4"> I use programming constructs, iteration and conditionals (selection), when communicating with the Micro:bit. I make effective use of comments to provide context and explain regular expressions. </p>
+        <img src="media/report-media/programming-constructs.png" class="img-fluid d-block m-auto w-50" alt="">
+        <p class="text-white mt-4"> I implemented the algorithm described in the flowchart earlier to control the fan based on the auto-on temperature in JavaScript. The readability of my code is enhanced by using comments and sensible variable names like “autoOnTemp” and “toggleSwitch.” </p>
+        <img src="media/report-media/algorithm.png" class="img-fluid d-block m-auto w-50" alt="">
+        <p class="text-white mt-4"> I split my HTML code into chunks and use comments to make it more readable and easier to navigate. </p>
+        <img src="media/report-media/html-chunks.png" class="img-fluid d-block m-auto w-50 mb-5" alt="">
+        <p class="text-white"> Communication between the Micro:bit and the computer uses USB serial. Two separate Python programs are running on the microcontroller and the computer. The Micro:bit writes to the serial in the format: “b’Temperature: X.” The computer writes to the serial in the format: “$Fan State: X.” The delimiter (b’ or $) lets each device determine whether to parse a line in the serial. The Micro:bit reads the fanState and adjusts the digital pin accordingly. The computer reads the temperature and sends it to Firebase. </p>
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <div class="text-center mb-4">
+              <p class="text-white">Computer</p>
+              <img src="media/report-media/microbit-computer-code.png" class="d-block m-auto img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 p-4">
+            <div class="text-center mb-4">
+              <p class="text-white">Micro:bit</p>
+              <img src="media/report-media/microbit-code.png" class="d-block m-auto img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        <h5 class="text-white fw-bold subheading">Testing</h5>
+        <p class="text-white mt-4"> I conducted unit testing for the email validation of the mailing list following standard guidelines. </p>
+        <img src="media/report-media/initial-email-validation.png" class="img-fluid d-block m-auto w-75" alt="">
+        <p class="text-white mt-4"> I found the RegEx I was using to validate the emails gave too many false negatives, so I changed it to a more complex one and repeated the same tests. </p>
+        <img src="media/report-media/updated-email-validation.png" class="img-fluid d-block m-auto w-75" alt="">
+        <p class="text-white mt-4"> I updated the RegEx for the contact form. I did the same email validation unit tests as above and got the same results. I then did the following unit tests. </p>
+        <img src="media/report-media/contact-form-test.png" class="img-fluid d-block m-auto w-75" alt="">
+        <p class="text-white mt-4"> I conducted integration testing between the Micro:bit and website by making the temperature increase with my hand and decrease with a fan. I altered the auto-on temperature, monitored the temperature, and controlled and monitored the fan, as in the video. The video also replicates the functional, system, and acceptance testing of the entire artefact that I did.</p>
+        <h5 class="text-white fw-bold subheading">Operation</h5>
+        <div class="col-md-12 p-3 text-center" data-aos="fade-up">
+          <div class="bg-transparent rounded overflow-hidden border-0 w-75 mx-auto">
+            <video width="850" height="480" controls poster="media/report-media/poster.png" preload="auto">
+              <source src="media/report-media/operation-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Implementation and testing -->
+    
+    <!-- Evaluation -->
+    <section class="implement py-5" id="evaluation">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fw-bold"> Evaluation </h3>
+        </div>
+        <h5 class="mt-4 fw-bold subheading"> Reflection </h5>
+        <p> Few unexpected results were encountered in the project. I found the database integration and serial communication more troublesome than expected. These are detailed earlier. </p>
+        <p> The needs of the end-user are met to a satisfactory level. Someone can view the temperature and control the fan in the room where their dog is sleeping while they are at work. However, it is not practical to constantly have a laptop connected to the Micro:bit. In future iterations of the project, the laptop could be replaced with a smaller computer such as an Arduino. The auto-on feature works perfectly to maintain a room at a constant temperature at night. </p>
+        <p> By adding a humidifier and humidity sensor, the system could be extended to maintain a certain level of humidity in a room for people who have medical conditions and need to maintain humidity. </p>
+        <p> I achieved my design ambitions and met my design requirements to a near-perfect level. One place where I did not meet my envisaged design is the toggle switch due to limitations with the Bootstrap toggle library. </p>
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <img src="media/report-media/intended-toggle.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 p-4 m-auto">
+            <img src="media/report-media/actual-toggle.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <h5 class="mt-4 fw-bold subheading"> Requirements of the brief </h5>
+		  <p class="mb-4">I have completely met the requirements of the brief.</p>
+        <div class="text-center">
+          <img src="media/report-media/the-task.png" class="img-fluid mb-3 w-50" alt="">
+          <img src="media/report-media/basic-requirements.png" class="img-fluid mb-3 w-50" alt="">
+          <img src="media/report-media/embedded-system.png" class="mb-4 img-fluid w-50" alt="">
+        </div>
+        <p>The website is interactive as it has buttons, forms, and links. SMARTair is a fictional home automation company. The fan turns on and off automatically depending on the temperature, hence it can be used as a part of a home automation system. The requirements for the artefact are described earlier. It allows people to control and monitor the temperature of a room to ensure their pets are safe at home. </p>
+        <div class="text-center">
+          <img src="media/report-media/website.png" class="mb-4 img-fluid w-50" alt="">
+        </div>
+        <p>The website has six pages, including a home page (index.html) and a user-friendly navigation bar at the top. The SMARTfan page highlights the main issue addressed by the embedded system and its main features.</p>
+        <img src="media/report-media/smartfan-product-page.png" class="mb-4 img-fluid w-100" alt="">
+        <p>The design is clean and crisp, with modern fonts and minimal text, as well as consistent with the navigation system, colours, fonts, and footer. The content is well-formatted, and regions are clearly defined. Information is concise and easy to read.</p>
+        <div class="col-md-12 p-3 text-center" data-aos="fade-up">
+          <div class="card bg-transparent rounded overflow-hidden border-0 w-75 mx-auto">
+            <video width="900" height="850" controls preload="auto">
+              <source src="media/report-media/clear-formatting.mov" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <p class="mt-5">Headings, paragraphs, links, images, video, sound, and animation are used.</p>
+        <div class="row mb-4">
+          <div class="col-md-6 p-3">
+            <img src="media/report-media/headings.png" class="smallImg mb-2 img-fluid w-100" alt="">
+            <img src="media/report-media/link.png" class="img-fluid w-100" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto">
+            <img src="media/report-media/videos.png" class=" img-fluid w-100" alt="">
+          </div>
+        </div>
+        <div class="col-md-12 p-3 text-center" data-aos="fade-up">
+          <div class="bg-transparent rounded overflow-hidden border-0">
+            <video width="900" height="475" controls preload="auto">
+              <source src="media/report-media/animations.mov" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <p class="mt-5">The website is accessible for people who use screen readers and may have vision impairments, as there is significant contrast, images have alt tags, and forms are labelled where possible.</p>
+        <div class="row mb-5">
+          <div class="col-md-6 p-3">
+            <img src="media/report-media/alt-tags.png" class="smallImg mb-2 img-fluid w-100" alt="">
+            <img src="media/report-media/form-label.png" class="smallImg img-fluid w-100" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/contrast-measure.png" class=" img-fluid h-100" alt="">
+          </div>
+        </div>
+        <p>The website is responsive on displays like phone and tablet, for those who may not have access to a laptop or desktop. </p>
+        <div class="col-md-12 p-3 text-center" data-aos="fade-up">
+          <div class="bg-transparent rounded overflow-hidden border-0">
+            <video width="800" height="718" controls preload="auto">
+              <source src="media/report-media/responsive.mov" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="media/report-media/advanced-requirements.png" class="mb-5 img-fluid mt-5 w-50" alt="">
+        </div>
+        <p>On the website, the user can control and monitor the fan status with the toggle switch and monitor the temperature of its environment. </p>
+        <p>There are data capture forms linked to a database, using UI controls such as labels, text boxes, scrolling text areas, drop-down lists, toggle switches, and buttons.</p>
+        <div class="row mb-4">
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/sign-in-form.png" class="img-fluid w-75" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/contact-form.png" class="img-fluid w-75" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/mailing-list.png" class="img-fluid w-75" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/control-panel.png" class="img-fluid w-75" alt="">
+          </div>
+        </div>
+        <p>Validation tests are implemented using clearly defined validation rules.</p>
+        <div class="row">
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/email-error.png" class=" img-fluid w-75" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/email-validation-rule.png" class=" img-fluid w-100" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/contact-error.png" class="smallImg img-fluid w-75" alt="">
+          </div>
+          <div class="col-md-6 p-3 m-auto text-center">
+            <img src="media/report-media/contact-validation-rules.png" class=" img-fluid w-75" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Evaluation -->
+    
+    <!-- References -->
+    <section class="references py-5 bg-dark" id="references">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fw-bold text-white"> References </h3>
+          <div class="row">
+            <div class="col-md-4 p-3">
+              <ul class="list-unstyled m-0 p-0">
+                <li>
+                  <a href="https://www.loxone.com/enen/blog/mr-runtastic-florian-gschwandtner/" class="text-white"> Mr Runtastic home case study </a>
+                </li>
+                <li>
+                  <a href="https://www.loxone.com/enen/blog/orchard-lodge/" class="text-white"> Orchard Lodge case study </a>
+                </li>
+                <li>
+                  <a href="https://www.statista.com/topics/2430/smart-homes/" class="text-white"> Statista smart home statistics </a>
+                </li>
+                <li>
+                  <a href="https://www.wyze.com/" class="text-white"> Wyze </a>
+                </li>
+                <li>
+                  <a href="https://gitmind.com/" class="text-white"> Gitmind (for mindmaps) </a>
+                </li>
+                <li>
+                  <a href="https://www.manualslib.com/products/Dfrobot-Boson-Kit-10949923.html" class="text-white"> Boson kit manual </a>
+                </li>
+                <li>
+                  <a href="https://www.elecfreaks.com/learn-en/microbitKit/smart_home_kit/smart_home_case_02.html" class="text-white"> Elecfreaks electric fan case study </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/PAJO23" class="text-white"> Pauric O'Donell Micro:bit tutorials </a>
+                </li>
+                <li>
+                  <a href="https://github.com/thisbejim/Pyrebase" class="text-white"> Pyrebase module </a>
+                </li>
+                <li>
+                  <a href="https://accelatest.com/how-to-write-email-validation-test-cases/" class="text-white"> Email validation guidelines </a>
+                </li>
+                <li>
+                  <a href="https://www.w3resource.com/javascript/form/javascript-sample-registration-form-validation.php" class="text-white"> w3resource email validation RegEx </a>
+                </li>
+                <li>
+                  <a href="https://emailregex.com/" class="text-white"> Professional email validation RegEx </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 p-3">
+              <ul class="list-unstyled m-0 p-0">
+                <li>
+                  <a href="https://gdpr.eu/email-encryption/" class="text-white"> GDPR email storage guidelines </a>
+                </li>
+                <li>
+                  <a href="https://www.canva.com/" class="text-white"> Canva </a>
+                </li>
+                <li>
+                  <a href="https://www.iconpacks.net/free-icon/cooling-symbol-3146.html" class="text-white"> SMARTair icon </a>
+                </li>
+                <li>
+                  <a href="https://www.hubspot.com/make-my-persona" class="text-white"> HubSpot Make My Persona Tool </a>
+                </li>
+                <li>
+                  <a href="https://www.dyson.ie/air-treatment" class="text-white"> Dyson </a>
+                </li>
+                <li>
+                  <a href="https://miro.com/templates/stakeholder-map/" class="text-white"> Miro (for stakeholder graphic) </a>
+                </li>
+                <li>
+                  <a href="https://octopus.do/" class="text-white"> Octopus.do (for sitemap) </a>
+                </li>
+                <li>
+                  <a href="https://wireframepro.mockflow.com/" class="text-white"> Wireframe Pro </a>
+                </li>
+                <li>
+                  <a href="https://app.diagrams.net/" class="text-white"> App.diagrams (for flowcharts) </a>
+                </li>
+                <li>
+                  <a href="https://firebase.google.com/" class="text-white"> Firebase </a>
+                </li>
+                <li>
+                  <a href="https://deviceframes.com/" class="text-white"> Deviceframes (for device mockups) </a>
+                </li>
+                <li>
+                  <a href="https://wave.webaim.org/" class="text-white"> Wave Web Accessibility Evaluation Tool </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 p-3">
+              <ul class="list-unstyled m-0 p-0">
+                <li>
+                  <a href="https://makecode.microbit.org/" class="text-white"> Microsoft Makecode for Micro:bit </a>
+                </li>
+                <li>
+                  <a href="http://www.objgen.com/" class="text-white"> Objgen JSON editor </a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/" class="text-white"> Bootstrap </a>
+                </li>
+                <li>
+                  <a href="https://jquery.com/" class="text-white"> jQuery </a>
+                </li>
+                <li>
+                  <a href="https://kenwheeler.github.io/slick/" class="text-white"> Slick (for carousels) </a>
+                </li>
+                <li>
+                  <a href="https://michalsnik.github.io/aos/" class="text-white"> AOS (Animate on scroll) library </a>
+                </li>
+                <li>
+                  <a href="https://www.bootstraptoggle.com/" class="text-white"> Bootstrap toggle library </a>
+                </li>
+                <li>
+                  <a href="https://replit.com/~" class="text-white"> Replit </a>
+                </li>
+                <li>
+                  <a href="https://www.lucidchart.com/pages/" class="text-white"> Lucidchart (for timeline) </a>
+                </li>
+                <li>
+                  <a href="https://www.microsoft.com/en-ie/microsoft-365/word" class="text-white"> Microsoft Word (for planning) </a>
+                </li>
+                <li>
+                  <a href="https://pypi.org/project/python-firebase/" class="text-white"> Python firebase library </a>
+                </li>
+                <li>
+                  <a href="https://www.examinations.ie/misc-doc/EN-EX-79279105.pdf" class="text-white"> LC 2022 Coursework Brief </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- References -->
+    
+    <!-- Summary word count -->
+    <section class="ready py-5" id="word-count">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fw-bold text-white mb-4"> Summary Word Count </h3>
+          <table class="table w-50 mx-auto table-striped bg-light">
+            <tr>
+              <td class="bg-secondary text-white border-dark border w-50 fw-bold"> Section </td>
+              <td class="bg-secondary text-white border-dark border w-50 fw-bold"> Word Count </td>
+            </tr>
+            <tr>
+              <td class="bg-gray text-dark border-dark border w-50 fw-bold"> 1. Investigation and Plan </td>
+              <td class="bg-gray text-dark border-dark border w-50 fw-bold"> 919 </td>
+            </tr>
+            <tr>
+              <td class="bg-gray1 text-dark border-dark border w-50 fw-bold"> 2. Design </td>
+              <td class="bg-gray1 text-dark border-dark border w-50 fw-bold"> 337 </td>
+            </tr>
+            <tr>
+              <td class="bg-gray text-dark border-dark border w-50 fw-bold"> 3. Implementation and Testing </td>
+              <td class="bg-gray text-dark border-dark border w-50 fw-bold"> 791 </td>
+            </tr>
+            <tr>
+              <td class="bg-gray1 text-dark border-dark border w-50 fw-bold"> 4. Evaluation </td>
+              <td class="bg-gray1 text-dark border-dark border w-50 fw-bold"> 453 </td>
+            </tr>
+            <tr>
+              <td class="bg-secondary text-white border-dark border w-50 fw-bold"> Total: </td>
+              <td class="bg-secondary text-white border-dark border w-50 fw-bold"> 2500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Summary word count -->
+    
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate on scroll) library JS -->
+    <script src="aos/dist/aos.js"></script>
+    
+    <!-- Slick (for carousel) -->
+    <script src="slick/slick.min.js"></script>
+    
+    <!-- JS to initialise animations and carousels -->
+    <script src="js/init.js"></script>
+  </body>
+</html>

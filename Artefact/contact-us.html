@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <!-- AOS (Animate on scroll) library CSS -->
+    <link href="aos/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.png">
+    
+    <title>Contact us | SMARTair</title>
+  </head>
+  <body class="bg-dark">
+    <div class="heroSection py-3">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="img-fluid logo" alt="The SMARTair logo: a baby blue background with three white waves">
+            <span>SMARTair</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="products.html"> Products <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="contact-us.html">Contact us <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="sign-in.html">My account <div class="line"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+      <!-- Main card -->
+      <section class="mainBanner py-5">
+        <div class="container">
+          <div class="card border-0 shadow">
+            <div class="card-body p-5">
+              <h2 class="text-dark fs-38 mb-3 fw-bold"> We'd love to hear from you! </h2>
+              <i> Do you have any questions, feedback, or suggestions? We're here to help you. Fill out the form below and we'll be in touch as soon as possible. Fields marked with an asterisk (*) are required. </i>
+              
+              <!-- Error message -->
+              <div class="alert alert-warning alert-dismissible fade show mt-4 rounded-pill" role="alert" id="contact-error">
+                <strong>Oops!</strong> Please check your details and try again.
+              </div>
+              <!-- Error message -->
+              
+              <form class="mt-4 contactForm" id="contact-form">
+                <div class="row">
+                  <div class="col-md-6 p-3">
+                    <label for="first-name-input"> First name * </label>
+                    <input type="text" class="form-control mt-2" placeholder="" name="" id="first-name-input">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label for="last-name-input"> Last name </label>
+                    <input type="text" class="form-control mt-2" placeholder="" required name="" id="last-name-input">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label for="contact-email-input"> Email * </label>
+                    <input type="email" class="form-control mt-2" placeholder="" required name="" id="contact-email-input">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label for="dropdown"> Nature of query </label>
+                    <select class="form-select form-control mt-2" id="dropdown">
+                      <option value="general">General</option>
+                      <option value="feedback">Feedback</option>
+                      <option value="shareholder">Shareholder</option>
+                      <option value="account">Account</option>
+                      <option value="complaint">Complaint</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12 p-3">
+                    <label for="message-input"> Message * </label>
+                    <textarea class="form-control mt-2 textarea" required id="message-input" cols="30" rows="5"></textarea>
+                  </div>
+                  <div class="col-md-12 p-3">
+                    <button class="btn btn-dark py-3 px-5 sbmtBtn rounded w-40" id="contact-submit"> Submit </button>
+                  </div>
+                </div>
+              </form>
+              
+              <!-- Success message -->
+              <div class="bg-secondary p-4 text-center" id="contact-success">
+                <p class="mb-0 text-gray"> Thank you for your message! We'll be in touch with you soon! </p>
+              </div>
+              <!-- Success message -->
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Main card -->
+    
+    <!-- Footer -->
+    <section class="footer pt-5 pb-2 bg-dark">
+      <div class="container">
+        <div class="text-center" id="footer-content">
+          <h2 class="fw-bold fs-38 text-white"> Stay updated </h2>
+          <p class="fs-18 text-white-50"> New products, beta testing, and discounts </p>
+          <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+              
+              <!-- Mailing list input -->
+              <form id="newsletter-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter your email" id="email-input">
+                  <button class="btn btn-light" id="newsletter-submit-btn"> Subscribe </button>
+                </div>
+              </form>
+              <!-- Mailing list input -->
+              
+              <!-- Success message -->
+              <div class="bg-secondary p-4 text-center rounded-pill fade show" id="newsletter-submitted">
+                <p class="mb-0 text-gray"> Thank you! We look forward to staying in touch! </p>
+              </div>
+              <!-- Success message -->
+              
+              <!-- Error message -->
+              <div class="alert alert-warning alert-dismissible fade show mt-4 rounded-pill" role="alert" id="newsletter-error">
+                <strong>Oops!</strong> Please check your email and try again.
+              </div>
+              <!-- Error message -->
+              
+            </div>
+          </div>
+          
+          <!-- Social links -->
+          <ul class="list-unstyled m-0 mt-5 p-0 text-center">
+            <li class="d-inline-block mx-3">
+              <a href="mailto:info@smartair.com" class="text-white-50 text-decoration-none">
+                <i class="fa fa-envelope"></i> Email </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.instagram.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-instagram"></i> Instagram </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.facebook.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-facebook"></i> Facebook </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.twitter.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+          </ul>
+          <!-- Social links -->
+          
+          <p class="text-white-50 mt-3 fs-14"> Copyright 2022 SMARTair. All rights reserved. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate on scroll) library JS -->
+    <script src="aos/dist/aos.js"></script>
+    
+    <!-- Slick (for carousel) -->
+    <script src="slick/slick.min.js"></script>
+    
+    <!-- Main JS -->
+    <script src="js/init.js"></script>
+    
+    <!-- JS for mailing list in footer -->
+    <script src="js/mailing-list.js"></script>
+    
+    <!-- JS for contact form -->
+    <script src="js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <!-- AOS (Animate on scroll) library CSS -->
+    <link href="aos/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.png">
+    
+    <title>SMARTfan | SMARTair</title>
+  </head>
+  <body>
+    <div class="heroSection py-3">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="img-fluid logo" alt="The SMARTair logo: a baby blue background with three white waves">
+            <span>SMARTair</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="products.html"> Products <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="contact-us.html">Contact us <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="sign-in.html">My account <div class="line"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+      <!-- Hero -->
+      <section class="mainBanner py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 p-3 text-center m-auto">
+              <h1 class="text-white fw-bold comfortaa"> SMARTfan </h1>
+              <h3 class="text-white fw-bold fs-30 comfortaa"> A fan like no other </h3>
+            </div>
+            <div class="col-md-6 p-3 text-center">
+              <div class="card bg-transparent rounded overflow-hidden border-0 w-50 mx-auto">
+                <img src="media/transparentbg-smartfan.png" class="img-fluid" alt="A fan with an oval-like shape and no visible blades">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero -->
+      
+    </div>
+    
+    <!-- Video -->
+    <section class="smartHome py-5 bg-dark">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-white-50 fs-20"> STAY COMFORTABLE, STAY PRODUCTIVE, STAY HAPPY </p>
+          <div class="mx-auto mt-4 embed-responsive embed-responsive-16by9">
+            <video width="900" height="540" controls autoplay muted reload="auto" class="embed-responsive-item promo-video">
+              <source src="media/promo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video -->
+    
+    <!-- Purpose -->
+    <section class="ourProducts py-5 w-75 mx-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto p-3">
+            <h3 class="fw-bold fs-38 mb-4"> Why do you need a SMARTfan? </h3>
+            <p class="fs-18 text-gray"> Have you ever walked into a room that was scorching hot, as you feel a burst of warm air in your face, like that of an oven? Do you often wake up in the middle of the night because it's too warm? Do you worry for your pet on a warm day when you're away from home? Now, these are problems of the past because you can control and monitor the fan in your room remotely and automatically using SMARTfan. </p>
+          </div>
+          <div class="col-md-6 m-auto p-3 text-center text-end">
+            <div class="card border-0 shadow rounded overflow-hidden w-75 ms-auto">
+              <img src="media/sad-dog.jpeg" class="img-fluid" alt="A sad dog looking out a window, perhaps in anticipation of its owner's arrival">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Purpose -->
+    
+    <!-- Features -->
+    <section class="iconColumns py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-3">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/thermometer.png" class="img-fluid card-img" alt="An icon of a standard mercury thermometer">
+                    <h4 class="fs-18 fw-bold mb-3"> Live monitoring </h4>
+                    <p class="mb-0 text-gray"> In your control panel, you can view the current temperature in your home, so you can control the fan accordingly. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/cog-wheels.png" class="img-fluid card-img" alt="An icon of cog wheels, or gears">
+                    <h4 class="fs-18 fw-bold mb-3"> Automatic cooling </h4>
+                    <p class="mb-0 text-gray"> You can configure your SMARTfan to automatically turn on once above a certain temperature. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/iphone.png" class="img-fluid card-img" alt="An icon of a phone">
+                    <h4 class="fs-18 fw-bold mb-3"> Control from anywhere </h4>
+                    <p class="mb-0 text-gray"> You can control all your SMARTair devices from anywhere in the world, just by accessing our website. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    
+    <!-- Stores -->
+    <section class="iconColumns py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fs-38 text-dark fw-bold"> Available in-store now at </h2>
+          <div class="w-75 text-center mx-auto">
+            <img src="media/SMARTair-Shops.png" class="img-fluid mx-auto mb-4 d-block" alt="A graphic showing a number of stores' logos, including Power City, Harvey Norman, Woodies, and Brown Thomas">
+          </div>
+          <a href="" class="fs-38 text-dark fw-bold text-decoration-none"> and more! </a>
+        </div>
+      </div>
+    </section>
+    <!-- Stores -->
+    
+    <!-- Call-to-action -->
+    <section class="ready py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-white fw-bold fs-38"> Do you have any questions? </h2>
+          <a href="contact-us.html" class="btn btn-dark shadow py-3 px-5 mx-3 rounded-pill mt-4"> Get in Touch </a>
+        </div>
+      </div>
+    </section>
+    <!-- Call-to-action -->
+    
+    <!-- Footer -->
+    <section class="footer pt-5 pb-2 bg-dark">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fw-bold fs-38 text-white" data-aos="fade-up"> Stay updated </h2>
+          <p class="fs-18 text-white-50" data-aos="fade-up"> New products, beta testing, and discounts </p>
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-md-6 offset-md-3">
+              
+              <!-- Mailing list input -->
+              <form id="newsletter-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter your email" id="email-input">
+                  <button class="btn btn-light" id="newsletter-submit-btn"> Subscribe </button>
+                </div>
+              </form>
+              <!-- Mailing list input -->
+              
+              <!-- Success message -->
+              <div class="bg-secondary p-4 text-center rounded-pill fade show" id="newsletter-submitted">
+                <p class="mb-0 text-gray"> Thank you! We look forward to staying in touch! </p>
+              </div>
+              <!-- Success message -->
+              
+              <!-- Error message -->
+              <div class="alert alert-warning alert-dismissible fade show mt-4 rounded-pill" role="alert" id="newsletter-error">
+                <strong>Oops!</strong> Please check your email and try again.
+              </div>
+              <!-- Error message -->
+              
+            </div>
+          </div>
+          
+          <!-- Social links -->
+          <ul class="list-unstyled m-0 mt-5 p-0 text-center">
+            <li class="d-inline-block mx-3">
+              <a href="mailto:info@smartair.com" class="text-white-50 text-decoration-none">
+                <i class="fa fa-envelope"></i> Email </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.instagram.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-instagram"></i> Instagram </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.facebook.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-facebook"></i> Facebook </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.twitter.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+          </ul>
+          <!-- Social links -->
+          
+          <p class="text-white-50 mt-3 fs-14"> Copyright 2022 SMARTair. All rights reserved. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate on scroll) library JS -->
+    <script src="aos/dist/aos.js"></script>
+    
+    <!-- Slick (for carousel) JS -->
+    <script src="slick/slick.min.js"></script>
+    
+    <!-- JS to initialise animations and carousels -->
+    <script src="js/init.js"></script>
+    
+    <!-- JS for mailing list in footer-->
+    <script src="js/mailing-list.js"></script>
+  </body>
+</html>

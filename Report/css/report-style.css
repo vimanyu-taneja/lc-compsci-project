@@ -1,0 +1,11 @@
+.btn.btn-next.text-muted.fs-1.slick-arrow {
+  top: 1% !important;
+}
+
+.btn.btn-prev.text-muted.fs-1.slick-arrow {
+  top: 1% !important;
+}
+
+.slick-dots {
+  bottom: 101%;
+}

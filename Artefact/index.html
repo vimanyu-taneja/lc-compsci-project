@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <!-- AOS (Animate on scroll) library CSS -->
+    <link href="aos/dist/aos.css" rel="stylesheet">
+    
+    <!-- Slick (for carousel) -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    
+    <!-- Google Fonts -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.png">
+    
+    <title>Home | SMARTair</title>
+  </head>
+  <body>
+    <div class="heroSection py-3">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="img-fluid logo" alt="The SMARTair logo: a baby blue background with three white waves">
+            <span>SMARTair</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="products.html"> Products <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="contact-us.html">Contact us <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="sign-in.html">My account <div class="line"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+      <!-- Hero -->
+      <section class="mainBanner py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 p-3 text-center m-auto" data-aos="fade-up">
+              <h1 class="text-white fw-bold comfortaa"> SMARTair </h1>
+              <h3 class="text-white fs-30"> Revolutionise the air you breathe </h3>
+              <a href="products.html" class="btn btn-light py-3 px-5 mt-4 rounded-pill shadow"> View Products </a>
+            </div>
+            <div class="col-md-6 p-3 text-center" data-aos="fade-up">
+              <div class="card bg-transparent shadow rounded overflow-hidden border-0 w-75 mx-auto">
+                <img src="media/hero-image.jpg" class="img-fluid" alt="A man holding a phone with an app on it to control a fan in front of him">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero -->
+      
+    </div>
+    
+    <!-- Banner -->
+    <section class="smartHome py-5 bg-dark">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-white-50 fs-20"> MAKE YOUR HOME A SMART HOME </p>
+          <h3 class="fs-38 text-white fw-bold"> Because you deserve to have control over your home, from anywhere </h3>
+          <img src="media/mockup.png" class="img-fluid w-100 mx-auto" alt="A visualisation of this webpage on a phone and laptop" data-aos="fade-up">
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    
+    <!-- Our products -->
+    <section class="ourProducts py-5 w-85">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto p-3">
+            <h3 class="fw-bold fs-38 mb-4"> Our products </h3>
+            <p class="fs-18 text-gray"> We specialise in smart home devices that revolutionise the very air that you breathe. From air conditioning units and fans, to humidifiers and air purifiers, we have everything that you need. </p>
+          </div>
+          <div class="col-md-6 m-auto p-3 text-center" data-aos="fade-up">
+            <div class="card border-0 shadow rounded overflow-hidden">
+              <img src="media/Dyson-Lineup.png" class="img-fluid" alt="A series of fans next to each other">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our products -->
+    
+    <!-- Our mission -->
+    <section class="ourProducts py-5  w-85">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto p-3 text-center" data-aos="fade-up">
+            <div class="card border-0 shadow rounded overflow-hidden">
+              <img src="media/our-mission.jpg" class="img-fluid" alt="A fan with the backdrop of greenery">
+            </div>
+          </div>
+          <div class="col-md-6 m-auto p-3 order-first order-md-last">
+            <h3 class="fw-bold fs-38 mb-4"> Our mission </h3>
+            <p class="fs-18 text-gray"> We strive to make the world a better place with our affordable, eco-friendly, and innovative products. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our mission -->
+    
+    <!-- Our team -->
+    <section class="ourProducts py-5  w-85">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto p-3">
+            <h3 class="fw-bold fs-38 mb-4"> Our team </h3>
+            <p class="fs-18 text-gray"> Founded in 2021 by four students in Trinity College Dublin, we now have over 20 fantastic members on our team. </p>
+          </div>
+          <div class="col-md-6 m-auto p-3 text-center" data-aos="fade-up">
+            <div class="card border-0 shadow rounded overflow-hidden">
+              <img src="media/our-team.jpg" class="img-fluid" alt="A group of about 20 young men and women">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our team -->
+    
+    <!-- Icon columns -->
+    <section class="iconColumns py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/trophy-cup-silhouette.png" class="img-fluid card-img" alt="An icon of a trophy cup">
+                    <h4 class="fs-18 fw-bold mb-3"> We have award-winning products </h4>
+                    <p class="mb-0 text-gray"> We have won many awards, including the Irish Innovation Awards and Forbes' Start-up of the Year. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/world.png" class="img-fluid card-img" alt="An icon of the Earth">
+                    <h4 class="fs-18 fw-bold mb-3"> We are carbon neutral </h4>
+                    <p class="mb-0 text-gray"> We care about the environment deeply and ensure that we don't harm the planet with our actions. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="media/lock.png" class="img-fluid card-img" alt="An icon of a lock">
+                    <h4 class="fs-18 fw-bold mb-3"> We don't steal your data </h4>
+                    <p class="mb-0 text-gray"> Your privacy is our number one priority. We keep your data secure and don't share it with anyone. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Icon columns -->
+    
+    <!-- Statistics columns-->
+    <section class="iconColumns py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h2 class="fs-60"> 1,200+ </h2>
+                    <p class="fw-bold fs-18"> Happy customers </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h2 class="fs-60"> €220k </h2>
+                    <p class="fw-bold fs-18"> Kickstarter funding </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3" data-aos="fade-up">
+            <div class="text-center">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="text-center">
+                    <h2 class="fs-60"> 98% </h2>
+                    <p class="fw-bold fs-18"> Customer satisfaction </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics columns -->
+    
+    <!-- Quotes carousel -->
+    <section class="quoteSlider py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="slider">
+              <div class="slide">
+                <div class="text-center">
+                  <img src="media/quotation.svg" class="img-fluid quot" alt="A quote symbol">
+                  <h3 class="mt-4 fs-24"> SMARTair has disrupted an industry that was sitting idle for years. Now, they are here to revolutionise the world. I have never seen such a passionate team in my life. I have used their products myself and I can assure you that they are of the utmost quality and usability. </h3>
+                  <div class="flx mt-4">
+                    <span class="text-gray">Sundar Pichai</span>
+                    <div class="line"></div>
+                    <span class="fw-bold text-gray">CEO, Alphabet</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="text-center">
+                  <img src="media/quotation.svg" class="img-fluid quot" alt="A quote symbol">
+                  <h3 class="mt-4 fs-24"> SMARTair is a truly revolutionary business. This is the future. I love being able to control the speed of my SMARTfan while sitting comfortably on the sofa. Honestly, I really respect the company's mission and I look forward to working with them as they grow. </h3>
+                  <div class="flx mt-4">
+                    <span class="text-gray">Bobby Healy</span>
+                    <div class="line"></div>
+                    <span class="fw-bold text-gray">CEO and Founder, MANNA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="text-center">
+                  <img src="media/quotation.svg" class="img-fluid quot" alt="A quote symbol">
+                  <h3 class="mt-4 fs-24"> What I love about SMARTair is their attention to detail. Their products are perfectly crafted, tested, and marketed. Furthermore, I appreciate how much they care about their customers. They will do whatever is necessary to ensure your experience in an amazing one. </h3>
+                  <div class="flx mt-4">
+                    <span class="text-gray">Mark Zuckerberg</span>
+                    <div class="line"></div>
+                    <span class="fw-bold text-gray">CEO, Meta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quotes carousel -->
+    
+    <!-- Call to action -->
+    <section class="ready py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-white fw-bold fs-38"> Ready to support our mission? </h2>
+          <a href="products.html" class="btn btn-light shadow py-3 px-5 mx-3 rounded-pill mt-4 w-30" data-aos="fade-up"> View Products </a>
+          <a href="contact-us.html" class="btn btn-dark shadow py-3 px-5 mx-3 rounded-pill mt-4 w-30" data-aos="fade-up"> Get in Touch </a>
+        </div>
+      </div>
+    </section>
+    <!-- Call to action -->
+    
+    <!-- Footer -->
+    <section class="footer pt-5 pb-2 bg-dark">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fw-bold fs-38 text-white" data-aos="fade-up"> Stay updated </h2>
+          <p class="fs-18 text-white-50" data-aos="fade-up"> New products, beta testing, and discounts </p>
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-md-6 offset-md-3">
+              
+              <!-- Mailing list input -->
+              <form id="newsletter-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter your email" id="email-input">
+                  <button class="btn btn-light" id="newsletter-submit-btn"> Subscribe </button>
+                </div>
+              </form>
+              <!-- Mailing list input -->
+              
+              <!-- Success message -->
+              <div class="bg-secondary p-4 text-center rounded-pill fade show" id="newsletter-submitted">
+                <p class="mb-0 text-gray"> Thank you! We look forward to staying in touch! </p>
+              </div>
+              <!-- Success message -->
+              
+              <!-- Error message -->
+              <div class="alert alert-warning alert-dismissible fade show mt-4 rounded-pill" role="alert" id="newsletter-error">
+                <strong>Oops!</strong> Please check your email and try again.
+              </div>
+              <!-- Error message -->
+              
+            </div>
+          </div>
+          
+          <!-- Social links -->
+          <ul class="list-unstyled m-0 mt-5 p-0 text-center">
+            <li class="d-inline-block mx-3">
+              <a href="mailto:info@smartair.com" class="text-white-50 text-decoration-none">
+                <i class="fa fa-envelope"></i> Email </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.instagram.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-instagram"></i> Instagram </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.facebook.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-facebook"></i> Facebook </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.twitter.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+          </ul>
+          <!-- Social links -->
+          
+          <p class="text-white-50 mt-3 fs-14"> Copyright 2022 SMARTair. All rights reserved. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate on scroll) library JS -->
+    <script src="aos/dist/aos.js"></script>
+    
+    <!-- Slick (for carousel) -->
+    <script src="slick/slick.min.js"></script>
+    
+    <!-- JS to initialise animations and carousels -->
+    <script src="js/init.js"></script>
+    
+    <!-- JS for mailing list in footer-->
+    <script src="js/mailing-list.js"></script>
+    
+  </body>
+</html>

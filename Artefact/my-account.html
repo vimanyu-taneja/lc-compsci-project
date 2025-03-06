@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+    <!-- AOS (Animate on scroll) library CSS -->
+    <link href="aos/dist/aos.css" rel="stylesheet">
+    
+    <!-- Toggle switch -->
+    <link href="bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.png">
+    
+    <title>My account | SMARTair</title>
+  </head>
+  <body class="bg-dark">
+    <div class="heroSection py-3">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="img-fluid logo" alt="The SMARTair logo: a baby blue background with three white waves">
+            <span>SMARTair</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="products.html"> Products <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="contact-us.html">Contact us <div class="line"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold ms-3 position-relative" href="sign-in.html">My account <div class="line"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+      <!-- Control panel -->
+      <section class="mainBanner py-5">
+        <div class="container">
+          <div class="card border-0 w-85 mx-auto shadow">
+            <div class="card-body p-5">
+              <h2 class="text-dark fs-38 mb-3 fw-bold"> Control panel </h2>
+              <div class="location">
+                <p class="fs-20 ls-2 text-muted fw-normal" id="device-name-label"> Loading... </p>
+                <div class="inp mt-2">
+                  <p>
+                    <strong class="fw-bold" id="fan-speed-label">Fan: </strong>
+                    <input type="checkbox" checked data-toggle="toggle" id="toggle-switch" class="toggle">
+                  </p>
+                </div>
+                <p id="temp-label">
+                  <strong>Temperature:</strong> Loading...
+                </p>
+                <div class="inp mt-2 flx">
+                  <p>
+                    <strong class="fw-bold">Automatically turn on when temperature is above:</strong>
+                  </p>
+                  <div class="input-group flx border br-0">
+                    <input type="text" onkeypress="return onlyNumberKey(event)" class="form-control" id="auto-on-input">
+                    <span class="margin-auto">°C</span>
+                  </div>
+                </div>
+                <div class="mt-2 text-muted"> If no value is given for automatic control, then you can control the fan manually </div </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Control panel -->
+      
+    </div>
+    
+    <!-- Footer -->
+    <section class="footer pt-5 pb-2 bg-dark">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="fw-bold fs-38 text-white"> Stay updated </h2>
+          <p class="fs-18 text-white-50"> New products, beta testing, and discounts </p>
+          <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+              
+              <!-- Mailing list input -->
+              <form id="newsletter-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter your email" id="email-input">
+                  <button class="btn btn-light" id="newsletter-submit-btn"> Subscribe </button>
+                </div>
+              </form>
+              <!-- Mailing list input -->
+              
+              <!-- Success message -->
+              <div class="bg-secondary p-4 text-center rounded-pill fade show" id="newsletter-submitted">
+                <p class="mb-0 text-gray"> Thank you! We look forward to staying in touch! </p>
+              </div>
+              <!-- Success message -->
+              
+              <!-- Error message -->
+              <div class="alert alert-warning alert-dismissible fade show mt-4 rounded-pill" role="alert" id="newsletter-error">
+                <strong>Oops!</strong> Please check your email and try again.
+              </div>
+              <!-- Error message -->
+              
+            </div>
+          </div>
+          
+          <!-- Social links -->
+          <ul class="list-unstyled m-0 mt-5 p-0 text-center">
+            <li class="d-inline-block mx-3">
+              <a href="mailto:info@smartair.com" class="text-white-50 text-decoration-none">
+                <i class="fa fa-envelope"></i> Email </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.instagram.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-instagram"></i> Instagram </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.facebook.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-facebook"></i> Facebook </a>
+            </li>
+            <li class="d-inline-block mx-3">
+              <a href="https://www.twitter.com/smartair/" class="text-white-50 text-decoration-none">
+                <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+          </ul>
+          <!-- Social links -->
+          
+          <p class="text-white-50 mt-3 fs-14"> Copyright 2022 SMARTair. All rights reserved. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate on scroll) library JS -->
+    <script src="aos/dist/aos.js"></script>
+    
+    <!-- Slick (for carousel) JS -->
+    <script src="slick/slick.min.js"></script>
+    
+    <!-- Bootstrap toggle switch -->
+    <script src="bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+    
+    <!-- JS to initialise animations and carousel -->
+    <script src="js/init.js"></script>
+    
+    <!-- JS for mailing list in footer-->
+    <script src="js/mailing-list.js"></script>
+    
+    <!-- JS for communication between website and device -->
+    <script src="js/device.js" type="module"></script>
+  </body>
+</html>
